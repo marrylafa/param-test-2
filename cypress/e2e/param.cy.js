@@ -16,7 +16,6 @@ describe('Parametrized test', ()=>{
       cy.get('[src="assets/images/material-dark-theme.jpg"]').click();
       cy.get('[title="Forms"]').click();
       cy.get('[title="Form Layouts"]').click();
-
       
       cy.get('nb-card nb-card-header').contains( 'Basic form').parent()
       .find('input[placeholder="Email"]').type(text[0])
